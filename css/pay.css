@@ -1,0 +1,349 @@
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+* {
+    font-family: 'Pretendard-Regular';
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+main > header:first-child {
+    height: 100px;
+    background-color: green;
+}
+main > section:nth-child(3) {
+    height: 200px;
+}
+.content {
+    height: 860px;
+    display: flex;
+}
+footer {
+    height: 200px;
+}
+
+.content > section:nth-child(1) {
+    flex-basis: 15%;
+}
+.content > section:nth-child(2) {
+    flex-basis: 70%;
+    display: flex;
+}
+.content > section:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.content-left {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-right: 20px;
+}
+.content-left-top {
+    flex-basis: 50%;
+}
+.content-left-top > section:nth-child(2){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.stock-title {
+    display: flex;
+    text-align: center;
+    line-height: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.stock-title div:nth-child(1){
+    flex-basis: 29%
+}
+.stock-title div:nth-child(2){
+    flex-basis: 30%
+}
+.stock-title div:nth-child(3){
+    flex-basis: 14%
+}
+.stock-title div:nth-child(4){
+    flex-basis: 9%
+}
+.stock-title div:nth-child(5){
+    flex-basis: 14%
+}
+
+.stock-info { 
+    height: 400px;
+    overflow: auto;
+}
+.stock-info-in {
+    display: flex;
+}
+.stock-info-in div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stock-info-in div:nth-child(1) {
+    flex-basis: 30%;
+    height: 92%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.stock-info-in div:nth-child(2) {
+    flex-basis: 33%;
+    height: 92%;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+}
+.stock-info-in div:nth-child(3) {
+    flex-basis: 15%;
+    height: 92%;
+}
+.stock-info-in div:nth-child(4) {
+    flex-basis: 7%;
+    height: 92%;
+}
+.stock-info-in div:nth-child(5) {
+    flex-basis: 15%;
+    height: 92%;
+}
+
+.stock-info div {
+    height: 130px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+.content-left-bottom {
+    flex-basis: 50%;
+}
+.content-left-bottom > section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+}
+.content-left-bottom > section:nth-child(2) > article{
+    display: flex;
+}
+.content-left-bottom article {
+    display: flex;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.content-left-bottom article > div {
+    margin: 0px 10px; 
+}
+.delivery-info > div {
+    display: flex;
+    margin: 15px 0px;
+}
+.delivery-info span {
+    display: flex;
+    width: 85px;
+    justify-content: flex-end;
+    margin: 0px 10px;
+}
+#zip {
+    margin: 0px 10px;
+}
+
+
+
+.content-right {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.content-right-top {
+    flex-basis: 35%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.pay-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: white;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.pay-detail-top{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+}
+.pay-detail-mid{
+    display:flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.pay-detail-mid > div:nth-child(1){
+    display:flex;
+    flex-direction: column;
+    font-size: 16px;
+    border-bottom: 2px solid purple;
+}
+.pay-detail-mid > div:nth-child(1) > div{
+    display:flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 10px;
+}
+.pay-detail-mid > div:nth-child(2){
+    display:flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.pay-detail-bottom{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 21.33px;
+    line-height: 40px;
+}
+
+.pay-detail > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+    border-left: 5px solid rgba(0, 0, 0, 0.5);
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+
+
+
+.content-right-mid {
+    flex-basis: 35%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+.payment-method > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.payment-method > div:nth-child(1) > div:nth-child(1){
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.payment-method-text {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.payment-method-text > div:nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+.payment-method-text > div:nth-child(2) p {
+    font-size: 12px;
+    line-height: 8px;
+    margin-left: 10px;
+}
+
+
+
+
+.content-right-bottom {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.recomend {
+    height: 200px;
+    display: flex;
+}
+.recomend > section:nth-child(1) {
+    flex-basis: 30%;
+}
+.recomend > section:nth-child(2) {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.recomend > section:nth-child(3) {
+    flex-basis: 30%;
+}
+
+.recomend > section:nth-child(2) > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 21.33px;
+    flex-basis: 20%;
+}
+.recomend > section:nth-child(2) > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 80%;
+}
+.recomend-box {
+    width: 25%;
+}
+
+
+
+
+
+.title {
+    font-size: 21.33px;
+    padding: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+#title1 {
+    color: #2678f3;
+    font-weight: 700;
+}
+
+#pay-btn {
+    width: 200px;
+    height: 50px;
+    background-color: #2678f3;
+    font-size: 21.33px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+
+}

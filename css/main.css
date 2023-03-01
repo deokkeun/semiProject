@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 100px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#content {
+    height: 1400px;
+    display: flex;
+}
+footer {
+    height: 250px;
+    background-color: hotpink;
+}
+
+
+header > section {
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#top > section:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10%;
+}
+#top > section:nth-child(2) {
+    flex-basis: 20%;
+    font-weight: 700;
+}
+#top > section:nth-child(3) {
+    flex-basis: 55%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+#top > section:nth-child(4) {
+    flex-basis: 15%;
+}
+
+
+#content > section:nth-child(1) {
+    flex-basis: 15%;
+    background-color: aqua;
+}
+#content > section:nth-child(2) {
+    min-width: 1280px;
+    display: flex;
+    border: 2px solid green;
+}
+#content > section:nth-child(3) {
+    flex-basis: 15%;
+    background-color: brown;
+}
+
+
+/* 전제품, 신상품, 고객리뷰 */
+.menu {
+    margin-left: 50px;
+}
+.menu > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+
+/* 검색 */
+#query {
+    width: 35px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+/* 검색버튼 */
+#search-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+}
+.search-area fieldset {
+    height: 35px;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    justify-content: flex;
+    border:none;
+}
+
+/* 장바구니, 마이페이지, 고객센터 */
+.mypage a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+/* 컨텐츠 */
+.content-left {
+    flex-basis: 25%;
+    background-color: blue;
+    border-right: 10px solid rgba(0, 0, 0, 0.3);
+}
+.content-right {
+    flex-basis: 75%;
+    background-color: antiquewhite;
+}
+
+

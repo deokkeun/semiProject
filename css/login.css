@@ -1,0 +1,47 @@
+.basic {
+    width: 400px;
+    height: 40px;
+}
+
+.btn {
+    width: 400px;
+    height: 40px;
+}
+
+.container1 > input {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.member-login:focus {
+    transform: scale(1.05, 1.05);
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+
+.member-pw:focus {
+    transform: scale(1.05, 1.05);
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+
+.mid {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.but > button{
+    display: block;
+    margin: 10px;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.login, .mid {
+    margin: 20px;
+}
